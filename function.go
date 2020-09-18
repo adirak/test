@@ -7,7 +7,7 @@ import (
 	"html"
 	"net/http"
 
-	"example.com/cloudfunction/loop"
+	"adirak.com/test/loop"
 	"github.com/Henry-Sarabia/blank"
 )
 
