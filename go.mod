@@ -1,4 +1,4 @@
-module adirak.com/test
+module github.com/adirak/test
 
 go 1.13
 
