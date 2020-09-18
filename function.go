@@ -8,6 +8,7 @@ import (
 	"net/http"
 
 	"example.com/cloudfunction/loop"
+	"github.com/Henry-Sarabia/blank"
 )
 
 // HelloWorld prints the JSON encoded "message" field in the body
@@ -18,6 +19,7 @@ func HelloWorld(w http.ResponseWriter, r *http.Request) {
 	}
 
 	word := loop.GenWord()
+	word = blank.Remove(word)
 
 	if err := json.NewDecoder(r.Body).Decode(&d); err != nil {
 		fmt.Fprint(w, word)
