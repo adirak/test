@@ -5,7 +5,7 @@ func GenWord() string {
 	count := 100
 	result := ""
 	for i := 0; i < count; i++ {
-		result += "Hello world....\n"
+		result += "Hello world WTF!....\n"
 	}
 
 	return result
